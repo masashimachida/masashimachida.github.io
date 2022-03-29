@@ -12,6 +12,13 @@ Masashi MACHIDA
 <span aria-hidden=true class=navbar-burger__line></span>
 <span aria-hidden=true class=navbar-burger__line></span></a><nav class=nav><ul class=nav__list id=navMenu></ul><ul class="nav__list nav__list--end"><li class=nav__list-item><div class=themeswitch><a title="Switch Theme"><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></li></ul></nav></div></header><div class="post
 animated fadeInDown"><div class=post__content></div></div><div class="post
+animated fadeInDown"><div class=post__content><h3><a href=/post/20220329/>SLACK API の SOCKET MODE はイマイチ使いづらい</a></h3><p>apps.connections.open method | Slack
+ドキュメントにある通り <a href=https://slack.com/api/apps.connections.open>https://slack.com/api/apps.connections.open</a> に POST すると websocket のエンドポイントを教えてくれる訳だけど、CORS 制限があるからブラウザの js から叩けない。
+リクエスト中に App-Level Tokens を含めるのでブラウザなんかで使うなよっていう話だとは思うんだけど、このためにサーバー立てるのはめんどくさいなー。
+この socket 繋げればイベントがばんばん飛んでくるんだけど、認証通しているわけでもないので DM や private なチャンネルの情報は流れてこない。bot 用途なんだろうけどせっかく socket なんだからブラウザで使いたい。</p></div><div class=post__footer><em class="fas fa-calendar-day"></em>
+<span class=post__footer-date>Tue, Mar 29, 2022</span>
+<span><a class=category href=/categories/tech/>tech</a></span>
+<span><a class=tag href=/tags/slack/>slack</a><a class=tag href=/tags/api/>api</a></span></div></div><div class="post
 animated fadeInDown"><div class=post__content><h3><a href=/post/20220324/>ブログをつくった</a></h3><p>ぜ。</p></div><div class=post__footer><em class="fas fa-calendar-day"></em>
 <span class=post__footer-date>Thu, Mar 24, 2022</span>
 <span><a class=tag href=/tags/misc/>misc</a></span></div></div><div class=pagination></div></main></div><footer class="footer footer__base"><ul class=footer__list><li class=footer__item>&copy;
