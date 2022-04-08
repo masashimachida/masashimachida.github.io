@@ -12,6 +12,16 @@ Masashi MACHIDA
 <span aria-hidden=true class=navbar-burger__line></span>
 <span aria-hidden=true class=navbar-burger__line></span></a><nav class=nav><ul class=nav__list id=navMenu></ul><ul class="nav__list nav__list--end"><li class=nav__list-item><div class=themeswitch><a title="Switch Theme"><i class="fas fa-adjust fa-fw" aria-hidden=true></i></a></div></li></ul></nav></div></header><div class="post
 animated fadeInDown"><div class=post__content></div></div><div class="post
+animated fadeInDown"><div class=post__content><h3><a href=/post/20220408/>エアコンを操作するのにリモコンを使うのがめんどうくさい</a></h3><p>リモコンと言ってますが、Nature Remo を使ってスマホからエアコンを操作しています（リモコンは諸事情により壊れました）。
+Nature Remo っていうのはいわゆるスマートリモコンで、リモコンの赤外線信号を覚えさせてスマホから操作しようって製品です。
+ただ、「ちょっと暑いな」と思って設定温度をさげようとする時なんかは、スマホを手に取り専用のアプリを立ち上げ、エアコンのメニューを選んで、微妙に使いづらいスライダーで１℃温度を下げる、という感じで一連の動きがとても煩わしいのです。 AmazonEcho も連携しているのでこいつに喋りかけてもいいんですが、電源ON/OFFならまだしも温度の上げ下げを伝えるのが割と難しい。というかもはや声を出すのもめんどうくさい。
+そこで Nature Remo の API を使ってデスクトップ上から操作できるようにしました。
+API はこちら。 Nature Inc. | Nature Developer Page
+出来たものはこちら。masashimachida/remo-in-tray
+起動するとメニューバーに現在の運転状況が表示される クリックしたところ 温度や風量はこう言う感じに設定する 作ってみたものの暖かくなってきたので出番があまりない。</p></div><div class=post__footer><em class="fas fa-calendar-day"></em>
+<span class=post__footer-date>Fri, Apr 8, 2022</span>
+<span><a class=category href=/categories/tech/>tech</a></span>
+<span><a class=tag href=/tags/remo/>remo</a><a class=tag href=/tags/api/>api</a></span></div></div><div class="post
 animated fadeInDown"><div class=post__content><h3><a href=/post/20220329/>SLACK API の SOCKET MODE はイマイチ使いづらい</a></h3><p>apps.connections.open method | Slack
 ドキュメントにある通り <a href=https://slack.com/api/apps.connections.open>https://slack.com/api/apps.connections.open</a> に POST すると websocket のエンドポイントを教えてくれる訳だけど、CORS 制限があるからブラウザの js から叩けない。
 リクエスト中に App-Level Tokens を含めるのでブラウザなんかで使うなよっていう話だとは思うんだけど、このためにサーバー立てるのはめんどくさいなー。
