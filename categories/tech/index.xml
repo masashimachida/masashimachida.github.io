@@ -1,15 +1,30 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>tech on Blog</title><link>http://masashimachida.github.io/categories/tech/</link><description>Recent content in tech on Blog</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><lastBuildDate>Wed, 24 Aug 2022 22:58:22 +0900</lastBuildDate><atom:link href="http://masashimachida.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml"/><item><title>Stable Diffusion で遊ぶ</title><link>http://masashimachida.github.io/post/20220824/</link><pubDate>Wed, 24 Aug 2022 22:58:22 +0900</pubDate><guid>http://masashimachida.github.io/post/20220824/</guid><description>M1 Mac でも動くってんでやってみました。
-一応動くには動いたんですが、3枚生成するのに50分とかかかってちょっと耐えれれない感じです。生成してる間、Macはフルパワーで処理しているので他のことが出来ません。 GoogleColabだとサクッといけるらしいのでやってみたら秒で環境ができて秒で生成してくれます。すばらしい。
-以下本日の結果です。
-Picture of a robot painting a picture Portrait of a man eat sushi while crying Ukiyo-e of the statue of liberty</description></item><item><title>composer にウクライナ</title><link>http://masashimachida.github.io/post/20220414/</link><pubDate>Thu, 14 Apr 2022 00:09:24 +0900</pubDate><guid>http://masashimachida.github.io/post/20220414/</guid><description>composerを実行するこんな表示に。
-Stand with Ukraine🇺🇦 · Issue #10582 · composer/composer
-ちなみにこんなissueもあったけど却下されてた。</description></item><item><title>デスクトップからエアコンを操作する</title><link>http://masashimachida.github.io/post/20220408/</link><pubDate>Fri, 08 Apr 2022 21:51:42 +0900</pubDate><guid>http://masashimachida.github.io/post/20220408/</guid><description>Nature Remo を使ってスマホからエアコンを操作しています（リモコンは諸事情により壊れました）。
-Nature Remo っていうのはいわゆるスマートリモコンで、リモコンの赤外線信号を覚えさせてスマホから操作しようって製品です。
-ただ、「ちょっと暑いな」と思って設定温度をさげようとする時なんかは、スマホを手に取り専用のアプリを立ち上げ、エアコンのメニューを選んで、微妙に使いづらいスライダーで１℃温度を下げる、という感じで一連の動きがとても煩わしいのです。 AmazonEcho も連携しているのでこいつに喋りかけてもいいんですが、電源ON/OFFならまだしも温度の上げ下げを伝えるのが割と難しい。というかもはや声を出すのもめんどうくさい。
-そこで Nature Remo の API を使ってデスクトップ上から操作できるようにしました。
-API はこちら。 Nature Inc. | Nature Developer Page
-出来たものはこちら。masashimachida/remo-in-tray
-起動するとメニューバーに現在の運転状況が表示される クリックしたところ 温度や風量はこう言う感じに設定する 作ってみたものの暖かくなってきたので出番があまりない。</description></item><item><title>Slack API の Socket Mode はイマイチ使いづらい</title><link>http://masashimachida.github.io/post/20220329/</link><pubDate>Tue, 29 Mar 2022 22:00:00 +0900</pubDate><guid>http://masashimachida.github.io/post/20220329/</guid><description>apps.connections.open method | Slack
-ドキュメントにある通り https://slack.com/api/apps.connections.open に POST すると websocket のエンドポイントを教えてくれる訳だけど、CORS 制限があるからブラウザの js から叩けない。
-リクエスト中に App-Level Tokens を含めるのでブラウザなんかで使うなよっていう話だとは思うんだけど、このためにサーバー立てるのはめんどくさいなー。
-この socket 繋げればイベントがばんばん飛んでくるんだけど、認証通しているわけでもないので DM や private なチャンネルの情報は流れてこない。bot 用途なんだろうけどせっかく socket なんだからブラウザで使いたい。</description></item></channel></rss>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Tech on Blog</title><link>http://masashimachida.github.io/categories/tech/</link><description>Recent content in Tech on Blog</description><generator>Hugo -- gohugo.io</generator><language>ja-jp</language><lastBuildDate>Thu, 15 Jan 2026 11:33:22 +0900</lastBuildDate><atom:link href="http://masashimachida.github.io/categories/tech/index.xml" rel="self" type="application/rss+xml"/><item><title>すごい</title><link>http://masashimachida.github.io/post/20260915/</link><pubDate>Thu, 15 Jan 2026 11:33:22 +0900</pubDate><guid>http://masashimachida.github.io/post/20260915/</guid><description>&lt;p&gt;すごい。AIすごい。&lt;/p&gt;
+&lt;p&gt;OpenAIで作りました。&lt;/p&gt;
+&lt;p&gt;以下本日の結果です。&lt;/p&gt;
+&lt;figure class="center"&gt;&lt;img src="http://masashimachida.github.io/images/20260915/f41a00a6-ff59-461e-a51e-ada9a29bbe25.png"&gt;&lt;figcaption&gt;
+&lt;h4&gt;Picture of a robot painting a picture&lt;/h4&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure class="center"&gt;&lt;img src="http://masashimachida.github.io/images/20260915/ae2cb7af-2f7f-4556-990a-347585e09c81.png"&gt;&lt;figcaption&gt;
+&lt;h4&gt;Portrait of a man eat sushi while crying&lt;/h4&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure class="center"&gt;&lt;img src="http://masashimachida.github.io/images/20260915/7c21f4bb-8b95-4924-8009-43a6d2c80ef1.png"&gt;&lt;figcaption&gt;
+&lt;h4&gt;Ukiyo-e of the statue of liberty&lt;/h4&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;</description></item><item><title>Stable Diffusion で遊ぶ</title><link>http://masashimachida.github.io/post/20220824/</link><pubDate>Wed, 24 Aug 2022 22:58:22 +0900</pubDate><guid>http://masashimachida.github.io/post/20220824/</guid><description>&lt;p&gt;M1 Mac でも動くってんでやってみました。&lt;/p&gt;
+&lt;p&gt;一応動くには動いたんですが、3枚生成するのに50分とかかかってちょっと耐えれれない感じです。生成してる間、Macはフルパワーで処理しているので他のことが出来ません。
+GoogleColabだとサクッといけるらしいのでやってみたら秒で環境ができて秒で生成してくれます。すばらしい。&lt;/p&gt;
+&lt;p&gt;以下本日の結果です。&lt;/p&gt;
+&lt;figure class="center"&gt;&lt;img src="http://masashimachida.github.io/images/20220824/picture_of_a_robot_painting_a_picture.png"&gt;&lt;figcaption&gt;
+&lt;h4&gt;Picture of a robot painting a picture&lt;/h4&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure class="center"&gt;&lt;img src="http://masashimachida.github.io/images/20220824/portrait_of_a_man_eat_sushi_while_crying.png"&gt;&lt;figcaption&gt;
+&lt;h4&gt;Portrait of a man eat sushi while crying&lt;/h4&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;
+&lt;figure class="center"&gt;&lt;img src="http://masashimachida.github.io/images/20220824/ukiyo-e_of_the_statue_of_liberty.png"&gt;&lt;figcaption&gt;
+&lt;h4&gt;Ukiyo-e of the statue of liberty&lt;/h4&gt;
+&lt;/figcaption&gt;
+&lt;/figure&gt;</description></item><item><title>composer にウクライナ</title><link>http://masashimachida.github.io/post/20220414/</link><pubDate>Thu, 14 Apr 2022 00:09:24 +0900</pubDate><guid>http://masashimachida.github.io/post/20220414/</guid><description>#StandWithUkraine</description></item><item><title>デスクトップからエアコンを操作する</title><link>http://masashimachida.github.io/post/20220408/</link><pubDate>Fri, 08 Apr 2022 21:51:42 +0900</pubDate><guid>http://masashimachida.github.io/post/20220408/</guid><description>NatureRemoのCloudAPIを使ってエアコンを操作するというはなし</description></item><item><title>Slack API の Socket Mode はイマイチ使いづらい</title><link>http://masashimachida.github.io/post/20220329/</link><pubDate>Tue, 29 Mar 2022 22:00:00 +0900</pubDate><guid>http://masashimachida.github.io/post/20220329/</guid><description>ブラウザから使えないじゃんというはなし</description></item></channel></rss>
